@@ -1,0 +1,31 @@
+//iniciar git si no lo esta 
+git init
+
+//si quieres cambiar el nombre de la rama principal:
+git branch -M main
+
+//conectar al repo
+git remote add origin https://github.com/cristiancb10/exa_practica.git
+
+//verifica el repo
+git remote -v
+
+//cambiar repo si es necesario
+git remote set-url origin https://github.com/tu-usuario/repo-existente.git
+
+//preparar cambios
+git add .
+
+//hacer comentarios
+git commit -m "first commit"
+
+//subir cambios al repo puede ser main o master
+git push -u origin main   
+
+
+cristiancb10
+Thismakenosense1
+
+
+
+
