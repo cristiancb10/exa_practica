@@ -1,0 +1,12 @@
+CREATE DATABASE practica1;
+
+USE practica1;  
+
+CREATE TABLE producto(
+    id INT PRIMARY KEY AUTO_INCREMENT, 
+    nombre VARCHAR(50) NOT NULL,
+    descripcion VARCHAR(255) NOT NULL,
+    precio DECIMAL(10,2) NOT NULL, 
+    stock INT UNSIGNED NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

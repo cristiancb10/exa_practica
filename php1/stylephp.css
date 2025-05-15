@@ -1,0 +1,38 @@
+table {
+    border-collapse: collapse; /* Esto es ESENCIAL */
+    width: 60%;
+    border: 2px solid #000; /* Borde exterior grueso */
+    font-family: Arial, sans-serif;
+}
+th, td {
+    border: 1px solid #000; /* Bordes de celdas */
+    padding: 8px;
+    text-align: left;
+    vertical-align: middle;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}  
+.formulario1 {
+    background-color: rgb(167, 183, 255);
+    padding: 25px;
+    margin-bottom: 10px;
+    max-width: 300px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

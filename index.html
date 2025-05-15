@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlazar a CSS -->
+    <link rel="stylesheet" href="actividad3.css">
+    <link rel="icon" href="casa.ico">
+    <title>Actividad 3</title>
+</head>
+<body>
+    <a href="/index.html">index1</a> |
+    <a href="/login.html">login1</a> 
+    <a href="/actividad2/actividad21-3-2025.html">actividad 2</a>
+    <br>
+    <form class="formulario1">
+        <h1>Formulario de registro </h1>
+        <div class="form-field">
+        <!-- Campo nombre completo -->
+            <label for="username">Nombre Completo</label>
+            <input type="text" id="username" placeholder="Ejemplo: Juan Perez Flores">
+        </div>
+        <br>
+        <!-- Campo edad -->
+        <div class="form-field">
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" placeholder="Ejemplo: 18">
+        </div>
+        <br>
+        <!-- Campo correo -->
+        <div class="form-field">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" placeholder="ejemplo@gmail.com">
+        </div>
+        <br>
+        <!-- Campo contraseña -->
+        <div class="form-field">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" placeholder="Longitud minina de 6 caracteres">
+        </div>
+        <br>
+        <!-- Campo confirmar contraseña -->
+        <div class="form-field">
+            <label for="confirmar contraseña">Repetir Contraseña</label>
+            <input type="password" id="confirmar contraseña" placeholder="confirmar contraseña">
+        </div>
+        <br>
+        <!-- Campo boton enviar -->
+        <button type="submit" id="btn-form">Enviar</button>
+    </form>
+    <br> 
+    <!-- Campo FORMULARIO 2 -->    
+    <form class="formulario2">
+        <h2>Validando campos</h2>
+        <!-- Campo nombre completo -->
+        <div class="validation-container">
+            <label>Nombre Completo</label>
+            <input type="checkbox" class="validation-check" disabled>
+        </div>
+        <br>
+        <!-- Campo edad -->
+        <div class="validation-container">
+            <label>Edad</label>
+            <input type="checkbox" class="validation-check" disabled>
+        </div>
+        <br>
+        <!-- Campo correo -->
+        <div class="validation-container">
+            <label for="correo">Correo</label>
+            <input type="checkbox" class="validation-check" disabled>
+        </div>
+        <br>
+        <!-- Campo contraseña -->
+        <div class="validation-container">
+            <label for="contraseña">Contraseña</label>
+            <input type="checkbox" class="validation-check" disabled>
+        </div>
+        <br>
+        <!-- Campo confirmar contraseña -->
+        <div class="validation-container">
+            <label for="confirmar contraseña">Repetir Contraseña</label>
+            <input type="checkbox" class="validation-check" disabled>
+        </div>   
+
+    </form>
+    <!-- Incluyendo un script externo -->
+    <script src="scriptsAct3.js"></script>
+</body>
+</html>

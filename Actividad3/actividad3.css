@@ -1,0 +1,54 @@
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}  
+.formulario1 {
+    background-color: rgb(214, 177, 255);
+    padding: 25px;
+    margin-bottom: 10px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#btn-form {
+    display: block;                /* Hace que el botón ocupe toda la línea */
+    width: 90%;                   /* Ancho del 90% del contenedor padre */
+    margin: 0 auto;               /* Centrado horizontal */
+    padding: 12px 0;              /* Espaciado vertical interno */
+    background-color: #4285f4;    /* Color azul */
+    color: white;
+    border: 2px solid #0a0a0a;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.formulario2 {
+    background-color: rgb(243, 240, 215);
+    padding: 25px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.validation-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #4285f4; /* Borde lateral azul */
+    border-radius: 4px;
+    background-color: #9effa0; /* Fondo muy claro para contraste */  
+}
+.validation-check {
+    width: 22px;                    /* Ancho del checkbox */
+    height: 22px;                   /* Alto del checkbox */
+    margin-left: 15px;              /* Espacio entre label y checkbox */
+    border: 2px solid #ffffff;     /*Borde */
+    border-radius: 4px;             /* Esquinas redondeadas */
+    cursor: default;                /* Cursor normal */
+    position: relative;             /* 17. Permite posicionar elementos internos */
+    transition: all 0.3s;           /* 18. Animación suave al cambiar estado */
+}
+
+

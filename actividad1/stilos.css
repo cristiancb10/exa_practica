@@ -1,0 +1,24 @@
+fieldset{
+    background-color: #e1e1e3;
+}
+.login{
+    width: 30%;
+    margin: auto;
+}
+
+/*Estilos para los campos de texto */
+#username, #password{
+    width: 100%;
+}
+
+/*Estilos para las etiquetas */
+label{
+    font-family: sans-serif;
+}
+
+/*Estilos para el botón */
+.boton{
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+}

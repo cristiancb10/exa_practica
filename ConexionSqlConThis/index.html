@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formulario1">
+        <h1>INGRESE DATOS</h1>
+        <label for="" >INGRESE CI:</label>
+        <input type="text" id="ci" name="ci"><br>
+        <label for="" >INGRESE NOMBRE:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="" >INGRESE SU CORREO:</label>
+        <input type="text" id="correo" name="correo"><br>
+        <label for="" >INGRESE SU FECHA DE NACIMIENTO:</label>
+        <input type="date" id="fecha_nac" name="fecha_nac">
+        <button type="button" id="boton1">NUEVA PERSONA</button>
+    </form>
+<script>
+    document.getElementById("boton1").addEventListener("click",() =>agregar());
+    function agregar(){
+        const datos = new URLSearchParams(new FormData(document.getElementById("formulario1")));
+    fetch('index1.php?'+datos,{
+    method: 'GET'
+    })
+}
+</script>
+
+</body>
+</html>

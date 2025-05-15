@@ -1,0 +1,64 @@
+h1,h4{
+margin: auto;
+width: 30%;
+}
+
+
+.formulario1{
+    width: 30%;
+    margin: auto;
+}
+.legenda1{
+    width: 100%;
+    margin: auto;  
+}
+.formulario2{
+    width: 30%;
+    margin: auto;
+    bottom: 100%; 
+}
+
+.colorboton{
+    background-color: #272929;
+    color: rgb(253, 253, 253);   
+    width: 100%;
+}
+
+fieldset{
+    margin: auto; 
+    background-color: #212127;
+    color: rgb(255, 255, 255);
+}
+legend{
+    background-color: #212127;
+    color: rgb(255,255,255 );
+}
+
+
+#username, #password{
+    width: 100%;
+}
+
+input{
+    width: 100%;
+}
+label{
+    font-family: sans-serif;
+    
+}
+
+.fieldset2{
+    background-color: #9cdbe4;
+    color: rgb(250, 0, 0);
+}
+.legend2{
+    background-color: #9cdbe4;
+    color: rgb(255, 0, 0); 
+}
+
+.boton{
+    width: 100%;
+
+    color: #ffffff;
+    background-color: #212127;
+}
