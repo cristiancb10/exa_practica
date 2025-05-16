@@ -12,10 +12,11 @@
     <p>¿Esta seguro de eliminar el libro <?=htmlspecialchars($books["titulo"]) ?>?</p>
 
     <form class="action" href="../controllers/book_delete.php" method = "POST">
-        <input type="hidden" name="ci" id="ci" value="<?=htmlspecialchars($lista["ci"])?>" readonly><br>
+        <input type="hidden" name="id" id="id" value="<?=htmlspecialchars($books["id"])?>">
+        <input type="hidden" name="ci" id="ci" value="<?=htmlspecialchars($lista["ci"])?>">
 
-        <label for="id">ID:</label><br>
-        <input type="text" name="id" id="id" value="<?=htmlspecialchars($books["id"])?>" readonly><br>
+        <label for="id_book">ID:</label><br>
+        <input type="text" name="id_book" id="id_book" value="<?=htmlspecialchars($books["id"])?>" disabled><br>
 
         <label for="titulo">Titulo:</label><br>
         <input type="text" name="titulo" id="titulo" value="<?=htmlspecialchars($books["titulo"])?>" disabled><br>

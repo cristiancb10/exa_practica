@@ -42,5 +42,29 @@ class Book extends Connection{
         return $cambios;
     }
 
+    public function updateLibro($id, $titulo, $autor, $editorial, $ano, $cantidad){
+        $this->conectar();
+        $stmt = mysqli_prepare(
+            $this->conexion,
+            "UPDATE $this->tabla SET titulo = ?, autor = ? , editorial = ? ,
+            ano = ?, cantidad = ? WHERE id = ?"
+        );       
+        $stmt->bind_param("sssiii", $titulo, $autor, $editorial, $ano, $cantidad, $id);
+        $stmt->execute();
+        $cambios = $stmt->affected_rows;
+        return $cambios;
+    }
 
+    public function crear($ci, $titulo, $autor, $editorial, $ano, $cantidad){
+        $this->conectar();
+        $stmt = mysqli_prepare(
+            $this->conexion,
+            "INSERT INTO $this->tabla (titulo, autor, editorial, ano, cantidad, ci) VALUES 
+            (?, ?, ?, ?, ?, ?)"
+        );
+        $stmt->bind_param("sssiis", $titulo, $autor, $editorial, $ano, $cantidad, $ci);
+        $stmt->execute();
+        $cambios = $stmt->affected_rows;
+        return $cambios;
+    }
 }

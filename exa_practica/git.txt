@@ -26,6 +26,38 @@ git push -u origin main
 cristiancb10
 Thismakenosense1
 
+CREATE DATABASE examen;
+
+USE examen;
+
+CREATE table usuario(
+	ci VARCHAR(50) PRIMARY KEY,
+	nombre VARCHAR(50) NOT NULL,
+	apePa VARCHAR(50) NOT NULL,
+	apeMa VARCHAR(50) NOT NULL,
+	cel INT NOT NULL, 
+	correo VARCHAR(50),
+	fechaReg TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	fechaAct TIMESTAMP DEFAULT	CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+DROP TABLE book
+CREATE table book(
+	id int PRIMARY KEY AUTO_INCREMENT,
+	titulo VARCHAR(50) NOT NULL,
+	autor VARCHAR(50) NOT NULL,
+	editorial VARCHAR(50) NOT NULL,
+	ano INT NOT NULL, 
+	cantidad INT NOT NULL,
+	ci VARCHAR(50),
+	fechaReg TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	fechaAct TIMESTAMP DEFAULT	CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	FOREIGN KEY (ci) REFERENCES usuario(ci) ON DELETE CASCADE 
+);
+
+DELETE FROM book;
+INSERT INTO book (titulo, autor, editorial, ano, cantidad, ci) VALUES 
+	("libro1","yolibro1","miedit",2011,20,"2222"),
+	("libro2","yolibro2","miedit2",2012,40,"2222");
 
 
 

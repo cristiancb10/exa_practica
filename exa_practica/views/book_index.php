@@ -43,7 +43,7 @@
                         <a href="../controllers/book_delete.php?id=<?=htmlspecialchars($dato["id"])?>&ci=<?= htmlspecialchars($lista["ci"]) ?>">Eliminar</a> 
                     </td>
                     <td>
-                        <a href="../controllers/book_update.php?id=<?=htmlspecialchars($dato["id"])?>">Actualizar</a> 
+                        <a href="../controllers/book_update.php?id=<?=htmlspecialchars($dato["id"])?>&ci=<?= htmlspecialchars($lista["ci"]) ?>">Actualizar</a> 
                     </td>
                 </tr>
             <?php endforeach ?>
@@ -55,6 +55,7 @@
         </table>
     </tbody>
     <br>
+    <a href="../controllers/book_create.php?ci=<?=htmlspecialchars($lista["ci"])?>">Registrar nuevo libro</a>
     <a href="../controllers/user_index.php">Volver al inicio</a>
 </body>
 </html>

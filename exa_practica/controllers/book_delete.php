@@ -19,15 +19,15 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
         include_once "../404.php";
         exit;
     }
-}elseif($_SERVER["REQUEST_METHOD"] == "POST"){
+}
+elseif($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $user_ci = $_POST["ci"];
     $usuarios = new Usuario();
     $lista = $usuarios->selectUsuario($user_ci);
 
     $libro = $_POST["id"];
-    $book = new Book();
-    
+    $book = new Book();  
     $books = $book->eliminar($libro);
 
     header ("Location: ../controllers/book_index.php?ci=$user_ci");
